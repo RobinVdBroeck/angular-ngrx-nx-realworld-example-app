@@ -21,10 +21,7 @@
             "polyfills": "apps/conduit/src/polyfills.ts",
             "tsConfig": "apps/conduit/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/conduit/src/favicon.ico",
-              "apps/conduit/src/assets"
-            ],
+            "assets": ["apps/conduit/src/favicon.ico", "apps/conduit/src/assets"],
             "styles": ["apps/conduit/src/styles.scss"],
             "scripts": []
           },
@@ -79,10 +76,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/conduit/tsconfig.app.json",
-              "apps/conduit/tsconfig.spec.json"
-            ],
+            "tsConfig": ["apps/conduit/tsconfig.app.json", "apps/conduit/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!apps/conduit/**"]
           }
         },
@@ -92,33 +86,6 @@
             "jestConfig": "apps/conduit/jest.config.js",
             "tsConfig": "apps/conduit/tsconfig.spec.json",
             "setupFile": "apps/conduit/src/test-setup.ts"
-          }
-        }
-      }
-    },
-    "conduit-e2e": {
-      "root": "apps/conduit-e2e",
-      "sourceRoot": "apps/conduit-e2e/src",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/conduit-e2e/cypress.json",
-            "tsConfig": "apps/conduit-e2e/tsconfig.e2e.json",
-            "devServerTarget": "conduit:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "conduit:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["apps/conduit-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/conduit-e2e/**"]
           }
         }
       }
@@ -159,10 +126,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/api/tsconfig.lib.json",
-              "libs/api/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/api/tsconfig.lib.json", "libs/api/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/api/**"]
           }
         },
@@ -185,10 +149,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/article/tsconfig.lib.json",
-              "libs/article/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/article/tsconfig.lib.json", "libs/article/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/article/**"]
           }
         },
@@ -211,10 +172,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/article-list/tsconfig.lib.json",
-              "libs/article-list/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/article-list/tsconfig.lib.json", "libs/article-list/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/article-list/**"]
           }
         },
@@ -237,10 +195,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/auth/tsconfig.lib.json",
-              "libs/auth/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/auth/tsconfig.lib.json", "libs/auth/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/auth/**"]
           }
         },
@@ -263,10 +218,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/editor/tsconfig.lib.json",
-              "libs/editor/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/editor/tsconfig.lib.json", "libs/editor/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/editor/**"]
           }
         },
@@ -289,10 +241,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/home/tsconfig.lib.json",
-              "libs/home/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/home/tsconfig.lib.json", "libs/home/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/home/**"]
           }
         },
@@ -315,10 +264,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/ngrx-error/tsconfig.lib.json",
-              "libs/ngrx-error/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/ngrx-error/tsconfig.lib.json", "libs/ngrx-error/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/ngrx-error/**"]
           }
         },
@@ -341,10 +287,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/ngrx-forms/tsconfig.lib.json",
-              "libs/ngrx-forms/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/ngrx-forms/tsconfig.lib.json", "libs/ngrx-forms/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/ngrx-forms/**"]
           }
         },
@@ -367,10 +310,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/profile/tsconfig.lib.json",
-              "libs/profile/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/profile/tsconfig.lib.json", "libs/profile/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/profile/**"]
           }
         },
@@ -393,10 +333,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/ngrx-router/tsconfig.lib.json",
-              "libs/ngrx-router/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/ngrx-router/tsconfig.lib.json", "libs/ngrx-router/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/ngrx-router/**"]
           }
         },
@@ -419,10 +356,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/settings/tsconfig.lib.json",
-              "libs/settings/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/settings/tsconfig.lib.json", "libs/settings/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/settings/**"]
           }
         },
@@ -445,10 +379,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/shared/tsconfig.lib.json",
-              "libs/shared/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/shared/tsconfig.lib.json", "libs/shared/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/shared/**"]
           }
         },
